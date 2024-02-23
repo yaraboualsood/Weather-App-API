@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg px-4 py-5">
+        <div class="container">
+            <a href="" class="logo d-flex">
+                <img src="imgs/logo@2x.png" alt="">
+                <div class="logo-desc px-4">
+                    <h4 class="py-0 m-0">Weather</h4>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto px-5">
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white nav-item-home" aria-current="page" href="">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link  text-white" href="">News</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="">Live Cameras</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link  text-white" href="">Photos</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link  text-white" href="">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="container">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <form class="find-location">
+                    <input type="text" placeholder="Find your location.." id="search">
+                    <input type="button" class=" text-white" value="Find">
+                </form>
+
+            </div>
+            <div class="forecast-table position-relative">
+                <div class="container">
+                    <div class="row g-0">
+
+                        <div class="col-md-4 m-0">
+                            <div class="forecast-item mt-5 rounded-4">
+                                <div class="forecast-day d-flex" id="today-date">
+                                    <h6 id="today-day-name">Tuesday</h6>
+                                    <h6>
+                                        <span id="today-day-number">30</span>
+                                        <span id="today-month">Feb</span>
+                                    </h6>
+
+                                </div>
+
+                                <div class="forecast-desc p-3">
+
+                                    <h5 id="today-location">Cairo</h5>
+
+                                    <div class="d-flex align-items-center ">
+                                        <h1 class="text-white" id="today-temp">13</h1>
+                                        <h1><sup>o</sup>C</h1>
+                                        <div class="px-5">
+                                            <img src="imgs/icon-umberella.png" id="today-condition-img">
+                                        </div>
+                                    </div>
+                                    <span class="text-primary py-5" id="today-condition-text">Clear</span>
+                                </div>
+
+                                <div class="additional-info p-3">
+                                    <img src="imgs/icon-umberella.png" alt="" class="pe-1">  <span class="" id="humidity">10%</span>
+                                    <img src="imgs/icon-wind.png" alt="" class="ps-5 pe-1"> <span id="wind">km/hr</span>
+                                    <img src="imgs/icon-compass.png" alt="" class="ps-5 pe-1"><span id="wind-direction"> east</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 m-0 rounded-4">
+                            <div class="forecast-item2 mt-5 rounded-4">
+                                <div class="forecast-day2 text-center" id="tomorrow-date">
+                                    <h6 class="next-day-name">Thursday</h6>
+                                </div>
+
+                                <div class="forecast-details text-center my-auto" id="tomorrow">
+
+                                    <img src="imgs/icon-wind.png" class="py-4 next-condition-img">
+                                    <h4 >
+                                        <span class="next-max-temp"></span>
+                                        <span><sup>o</sup>C</span> 
+                                     </h4>
+                                     
+                                     <p>
+                                        <span class="next-min-temp"></span>
+                                        <span><sup>o</sup>C</span>
+                                    </p>
+                                    <span class="text-primary next-condition-text">Clear</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 m-0 rounded-4">
+                            <div class="forecast-item mt-5 rounded-4">
+                                <div class="forecast-day2 text-center" >
+                                    <h6 class="next-day-name">Thursday</h6>
+                                </div>
+
+                                <div class="forecast-details text-center my-auto" >
+
+                                    <img src="imgs/icon-wind.png" class="py-4 next-condition-img">
+                                    <h4 >
+                                       <span class="next-max-temp"></span>
+                                       <span><sup>o</sup>C</span> 
+                                    </h4>
+                                    <p >
+                                        <span class="next-min-temp"></span>
+                                        <span><sup>o</sup>C</span>
+                                    </p>
+                                    <span class="text-primary next-condition-text">Clear</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" class="subscribe-form">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links px-5">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+body{
+    background-color: #1E202B;
+
+}
+
+.navbar{
+background-color: #1E202B;
+color: white;
+}
+
+.navbar img{
+    width: 64px;
+    height: 38px;
+}
+
+.navbar-brand{
+    padding: 0px 30px 0px 20px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+small{
+    color: #bfc1c8;
+}
+
+
+.nav-item a{
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 5px 20px!important
+}
+
+.nav-item:hover a, .nav-item .nav-item-home{
+    border-color: #009ad8;
+    color: #009ad8!important
+}
+
+
+.header{
+    background-image: url(../imgs/chicago-city-lights-at-night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    min-height: 500px;
+    position: relative;
+}
+
+form input{
+position: relative;
+outline: 0;
+border: 0px;
+}
+
+
+.find-location{
+    position: relative;
+}
+
+.find-location input[type="text"]{
+background-color: #1E202B !important;
+width: 100%;
+padding: 15px;
+color: white;
+border-radius: 30px;
+}
+.find-location input[type="button"] {
+border-radius: 30px;
+background-color: #009ad8;
+}
+
+
+.find-location input[type="submit"], .find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+
+form input:focus{
+border-color: transparent !important;
+outline: 0;
+border: 0px;
+}
+
+.bg-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.forecast-item{
+    background-color: #323544;
+    height: 350px;
+}
+
+.forecast-day{
+    background-color: #2D303D;
+    color: #BFC1C8;
+    justify-content: space-between;
+    padding: 8px;
+}
+.forecast-day2{
+    background-color: #222530;
+    color: #BFC1C8;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.forecast-desc{
+    color: #BFC1C8;
+}
+
+.forecast-desc h1{
+    font-size: 90px;
+}
+
+
+.additional-info{
+    color: #BFC1C8;
+}
+
+.forecast-item2{
+    background-color: #262936;
+    height: 350px;
+   
+}
+
+.forecast-details{
+color: white;
+padding: 50px 20px 10px;
+}
+
+
+.site-footer {
+    background: #262936;
+    padding: 50px 0;
+}
+
+.site-footer .subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.site-footer .subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+
+.site-footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+form input[type="submit"]{
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+.site-footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
